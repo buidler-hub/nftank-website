@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        fira: ["Fira Code", "monospace"]
-      }
+        fira: ['Fira Code', 'monospace'],
+      },
     },
   },
   plugins: [],

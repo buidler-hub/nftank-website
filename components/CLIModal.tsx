@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import Modal from './templates/Modal'
-import { cliPopupAtom } from "../utils/atoms"
-import { useRecoilState } from "recoil"
+import { cliPopupAtom } from '../utils/atoms'
+import { useRecoilState } from 'recoil'
 
 const CLIModal: FC = () => {
   const [modal, setModal] = useRecoilState<boolean>(cliPopupAtom)
@@ -40,7 +40,10 @@ const CLIModal: FC = () => {
           </div>
         </div>
 
-        <button className="absolute bottom-0 right-0 m-2 mt-8 rounded-md bg-gray-200 px-3 py-2 transition-all duration-100 hover:bg-gray-300" onClick={()=>setModal(false)}>
+        <button
+          className="absolute bottom-0 right-0 m-2 mt-8 rounded-md bg-gray-200 px-3 py-2 transition-all duration-100 hover:bg-gray-300"
+          onClick={() => setModal(false)}
+        >
           Close
         </button>
       </div>
