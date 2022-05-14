@@ -1,15 +1,21 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useRecoilState } from 'recoil'
+import CLIModal from '../components/CLIModal'
 import RequestModal from '../components/RequestModal'
-import { requestNFTPopupAtom } from '../utils/atoms'
+import { requestNFTPopupAtom, cliPopupAtom } from '../utils/atoms'
 
 const Home: NextPage = () => {
   const [requestPopup, setRequestPopup] =
     useRecoilState<boolean>(requestNFTPopupAtom)
+  const [cliPopup, setCliPopup] = useRecoilState<boolean>(cliPopupAtom)
 
   const showRequestPopup = () => {
     setRequestPopup(true)
+  }
+
+  const showCliPopup = () => {
+    setCliPopup(true)
   }
 
   return (
@@ -19,6 +25,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {requestPopup && <RequestModal />}
+      {cliPopup && <CLIModal />}
       <div
         className="flex h-screen w-screen flex-col items-center justify-center"
         style={{ backgroundImage: "url('/bg.png')", backgroundSize: 'cover' }}
@@ -38,7 +45,10 @@ const Home: NextPage = () => {
           >
             Request NFT
           </button>
-          <button className="mx-3 w-52 rounded-md bg-gray-900 py-3 text-xl text-white transition-all hover:bg-black">
+          <button
+            onClick={showCliPopup}
+            className="mx-3 w-52 rounded-md bg-gray-900 py-3 text-xl text-white transition-all hover:bg-black"
+          >
             Install CLI
           </button>
         </div>
