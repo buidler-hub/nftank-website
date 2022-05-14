@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, FC } from 'react'
 import { useRecoilState } from 'recoil'
 import { requestNFTPopupAtom } from '../utils/atoms'
 import Modal from './templates/Modal'
@@ -6,6 +6,10 @@ import Loader from 'react-spinners/HashLoader'
 import toast from 'react-hot-toast'
 import { getBase64FromUrl, getBase64 } from '../utils/base64'
 import axiosInstance from '../utils/axios'
+
+interface Props {
+  handleClose: () => void
+}
 
 export default function RequestModal() {
   const [type, setType] = useState<string>('erc721')
