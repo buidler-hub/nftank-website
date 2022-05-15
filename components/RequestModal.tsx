@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, FC } from 'react'
 import { useRecoilState } from 'recoil'
 import { requestNFTPopupAtom } from '../utils/atoms'
 import Modal from './templates/Modal'
@@ -6,6 +6,10 @@ import Loader from 'react-spinners/HashLoader'
 import toast from 'react-hot-toast'
 import { getBase64FromUrl, getBase64 } from '../utils/base64'
 import axiosInstance from '../utils/axios'
+
+interface Props {
+  handleClose: () => void
+}
 
 export default function RequestModal() {
   const [type, setType] = useState<string>('erc721')
@@ -125,7 +129,11 @@ export default function RequestModal() {
         />
         <input
           type="file"
-          className="my-3 w-full max-w-3xl rounded-md border border-gray-400 px-5 py-3 text-lg outline-none"
+          className="my-3 w-full max-w-3xl rounded-md border border-gray-400 px-5 py-3 text-lg outline-none  file:mr-4 file:rounded-full file:border-0
+      file:bg-violet-50 file:py-2
+      file:px-4 file:text-sm
+      file:font-semibold file:text-violet-700
+      hover:file:bg-violet-100"
           placeholder="Name of the NFT (Optional)"
           accept="image/*"
           onChange={(e) => setImage(e.target.files![0])}
