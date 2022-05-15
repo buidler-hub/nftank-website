@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         canonical="https://nftank.xyz"
         openGraph={{
           url: 'https://nftank.xyz',
-          title: 'NFTanj',
+          title: 'NFTank',
           description:
             'NFTank (NFT tank for dummies) will allow developers to quickly request NFTs to personal wallets or smart contracts in just a few clicks.',
           images: [
