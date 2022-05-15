@@ -27,8 +27,8 @@ export default function RequestModal() {
   }
 
   const sendRequest = async () => {
-    setLoading(true)
     try {
+      setLoading(true)
       // check data
       if (!address) {
         toast.error('Please enter wallet address!')
@@ -38,7 +38,7 @@ export default function RequestModal() {
       let imgUrl: string | null = null
       // check image and assign ipfsUrl
       if (image) {
-        const imageBase64: string = (await getBase64(image)) as string
+        const imageBase64: string = (await getBase64(image!)) as string
         console.log(imageBase64)
 
         const base64Final = imageBase64.split(',')
@@ -162,15 +162,15 @@ export default function RequestModal() {
           <button
             onClick={sendRequest}
             disabled={loading}
-            className={`mx-3 w-52 rounded-md ${
+            className={`mx-3 h-12 w-52 rounded-md lg:h-auto ${
               loading ? 'bg-blue-800' : 'bg-blue-700'
-            } my-2 py-3 text-xl text-white transition-all hover:bg-blue-800`}
+            } my-2 flex items-center justify-center text-xl text-white transition-all hover:bg-blue-800 lg:py-3`}
           >
             {loading ? <Loader size={30} color="white" /> : 'Request NFT'}
           </button>
           <button
             onClick={closeModal}
-            className="mx-3 my-2 w-52 rounded-md bg-red-500 py-3 text-xl text-white transition-all hover:bg-red-600"
+            className="mx-3 my-2 h-12 w-52 rounded-md bg-red-500 text-xl text-white transition-all hover:bg-red-600 lg:h-auto lg:py-3"
           >
             Cancel
           </button>

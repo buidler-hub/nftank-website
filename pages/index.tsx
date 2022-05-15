@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       {requestPopup && <RequestModal />}
       {cliPopup && <CLIModal />}
       <div
-        className="flex min-h-screen w-screen flex-col items-center justify-center"
+        className="flex min-h-screen w-screen flex-col items-center justify-center p-5"
         style={{ backgroundImage: "url('/bg.png')", backgroundSize: 'cover' }}
       >
         <h1 className="max-w-4xl text-center text-5xl font-black leading-snug lg:text-7xl lg:leading-[5rem]">
