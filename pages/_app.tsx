@@ -7,6 +7,7 @@ import "@fontsource/inter"
 import { NextSeo } from 'next-seo'
 import Head from "next/head"
 import Script from 'next/script'
+import "@fontsource/inter/900.css"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
