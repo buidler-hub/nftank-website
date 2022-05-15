@@ -158,19 +158,19 @@ export default function RequestModal() {
           </option>
         </select>
 
-        <div className="my-5 flex">
+        <div className="my-5 flex flex-col md:flex-row">
           <button
             onClick={sendRequest}
             disabled={loading}
             className={`mx-3 w-52 rounded-md ${
               loading ? 'bg-blue-800' : 'bg-blue-700'
-            } py-3 text-xl text-white transition-all hover:bg-blue-800`}
+            } my-2 py-3 text-xl text-white transition-all hover:bg-blue-800`}
           >
             {loading ? <Loader size={30} color="white" /> : 'Request NFT'}
           </button>
           <button
             onClick={closeModal}
-            className="mx-3 w-52 rounded-md bg-red-500 py-3 text-xl text-white transition-all hover:bg-red-600"
+            className="mx-3 my-2 w-52 rounded-md bg-red-500 py-3 text-xl text-white transition-all hover:bg-red-600"
           >
             Cancel
           </button>

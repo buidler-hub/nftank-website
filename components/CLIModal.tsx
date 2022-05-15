@@ -11,7 +11,11 @@ const CLIModal: FC = () => {
       <div className="flex w-full flex-col items-center gap-y-6">
         <div className="text-3xl font-bold">Install CLI</div>
 
-        <div className="mb-6 flex flex-col gap-y-3 rounded-md bg-gray-800 py-6 pl-3 pr-10">
+        <div className="mt-5 text-lg">
+          To install NFTank CLI, use the following commands in your terminal.
+        </div>
+
+        <div className="mb-10 flex flex-col gap-y-3 rounded-md bg-gray-800 py-6 pl-3 pr-10">
           <div className="top-0 left-0 ml-3 flex flex-row items-center gap-x-2">
             <div className="rounded-full bg-red-500 p-2"></div>
             <div className="rounded-full bg-yellow-500 p-2"></div>

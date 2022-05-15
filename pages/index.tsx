@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   }
 
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center">
+    <div className="relative">
       <Head>
         <title>NFTank - Faucet for NFTs</title>
         <link rel="icon" href="/favicon.ico" />
@@ -27,10 +27,10 @@ const Home: NextPage = () => {
       {requestPopup && <RequestModal />}
       {cliPopup && <CLIModal />}
       <div
-        className="flex h-screen w-screen flex-col items-center justify-center"
+        className="flex min-h-screen w-screen flex-col items-center justify-center"
         style={{ backgroundImage: "url('/bg.png')", backgroundSize: 'cover' }}
       >
-        <h1 className="max-w-4xl text-center text-7xl font-black leading-[5rem]">
+        <h1 className="max-w-4xl text-center text-5xl font-black leading-snug lg:text-7xl lg:leading-[5rem]">
           Need <span className="text-blue-700">NFTs</span> for testing? You're
           at the right place!
         </h1>
@@ -38,16 +38,16 @@ const Home: NextPage = () => {
           Quickly gain access to NFTs. Need more customization? You can upload
           your own details for the NFT!
         </div>
-        <div className="mt-7 flex">
+        <div className="mt-7 flex flex-col md:flex-row">
           <button
             onClick={showRequestPopup}
-            className="mx-3 w-52 rounded-md bg-blue-700 py-3 text-xl text-white transition-all hover:bg-blue-800"
+            className="mx-3 my-2 w-52 rounded-md bg-blue-700 py-3 text-xl text-white transition-all hover:bg-blue-800"
           >
             Request NFT
           </button>
           <button
             onClick={showCliPopup}
-            className="mx-3 w-52 rounded-md bg-gray-900 py-3 text-xl text-white transition-all hover:bg-black"
+            className="mx-3 my-2 w-52 rounded-md bg-gray-900 py-3 text-xl text-white transition-all hover:bg-black"
           >
             Install CLI
           </button>
