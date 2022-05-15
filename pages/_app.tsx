@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             'NFTank (NFT tank for dummies) will allow developers to quickly request NFTs to personal wallets or smart contracts in just a few clicks.',
           images: [
             {
-              url: `/og-image.png`,
+              url: `/assets/og-image.png`,
               width: 800,
               height: 420,
               alt: 'og image',
