@@ -254,15 +254,15 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@fontsource/fira-code@4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/fira-code/-/fira-code-4.5.9.tgz#8ca3e6020f9d3c340a643c5c0a12b2ebf37dc7a6"
-  integrity sha512-moi9UVTOfQFXjiUAITy5W727dIP6c0K5TGPN+wTaFHn+/5flc/V0Uq9cKTs39yGrPUOneTbuAe8C8q7CzUP4Aw==
-
-"@fontsource/inter@4.5.10":
+"@fontsource/fira-code@4.5.10":
   version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.10.tgz#c4e6839197dc4c77842eae9475ff0e036ff87fc9"
-  integrity sha512-YOt2/K8yo25MVBjrTImHxVimmyZEt0GcrWp2w7O29sdFX9SJqbGlOqjFJ1wI5yBbP6AmTeimyPE0UC/jjFRoIA==
+  resolved "https://registry.yarnpkg.com/@fontsource/fira-code/-/fira-code-4.5.10.tgz#e1060a60d08cba1669e1ff2025350aaab7c0e6bc"
+  integrity sha512-CF6cBJZcpuW+qxtr7JZt3kPwEHj0xWYgsRr7q3tGhkIqEmxdJ6Omvw61LEFQuRXeAwOnXBGZr42qTrO+vCzvAQ==
+
+"@fontsource/inter@4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.11.tgz#3c45014821e8c82b247a291f1944dd2764a2d1ed"
+  integrity sha512-toizzQkfXL8YJcG/f8j3EYXYGQe4OxiDEItThSigvHU+cYNDw8HPp3wLYQX745hddsnHqOGCM4exitFSBOU8+w==
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
