@@ -7,8 +7,8 @@
     "format": "yarn prettier --write ."
   },
   "dependencies": {
-    "@fontsource/fira-code": "4.5.9",
-    "@fontsource/inter": "4.5.10",
+    "@fontsource/fira-code": "4.5.11",
+    "@fontsource/inter": "4.5.12",
     "@walletconnect/web3-provider": "1.7.8",
     "axios": "0.27.2",
     "next": "latest",
